@@ -35,11 +35,28 @@ public class InputManager : MonoBehaviour
 
     private void keyPressedCallback(char letter)
     {
+        wordContainers[CurrentWordContainerIndex].Add(letter);
+
         if (wordContainers[CurrentWordContainerIndex].IsComplete())
         {
+           // CheckWord();
+            //CurrentWordContainerIndex++;
+        }
+    }
+
+    public void CheckWord()
+    {
+        string wordToCheck = wordContainers[CurrentWordContainerIndex].GetWord();
+        string secretWord = WordManager.instance.getSecretWord();
+
+        if (wordToCheck == secretWord)
+        {
+            Debug.Log("Level Complete");
+        }
+        else
+        {
+            Debug.Log("Wrong word");
             CurrentWordContainerIndex++;
         }
-
-        wordContainers[CurrentWordContainerIndex].Add(letter);
     }
 }

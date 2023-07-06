@@ -44,6 +44,18 @@ public class WordContainer : MonoBehaviour
         CurrentLetterIndex++;
     }
 
+    public string GetWord()
+    {
+        string word = " ";
+
+        for(int i = 0; i < letterContainers.Length; i++)
+        {
+            word += letterContainers[i].GetLetter().ToString();
+        }
+
+        return word;
+    }
+
     public bool IsComplete()
     {
         return CurrentLetterIndex >= 5;
