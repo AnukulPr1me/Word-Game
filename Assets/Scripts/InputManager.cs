@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     [Header(" Elements ")]
-    [SerializeField] private WordContainer[] wordContainers;
+     [SerializeField] private WordContainer[] wordContainers;
 
 
     [Header("Settings")]
@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
         string wordToCheck = wordContainers[CurrentWordContainerIndex].GetWord();
         string secretWord = WordManager.instance.getSecretWord();
 
-        if (wordToCheck == secretWord)
+        if (string.Equals(secretWord,wordToCheck))
         {
             Debug.Log("Level Complete");
         }
@@ -57,6 +57,9 @@ public class InputManager : MonoBehaviour
         {
             Debug.Log("Wrong word");
             CurrentWordContainerIndex++;
+            Debug.Log(wordToCheck.ToString());
+            Debug.Log(secretWord.ToString());
+
         }
     }
 }

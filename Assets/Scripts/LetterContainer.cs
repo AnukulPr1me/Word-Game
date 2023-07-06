@@ -22,7 +22,7 @@ public class LetterContainer : MonoBehaviour
 
     public void Initialize()
     {
-        letter.text = " ";
+        letter.text = "";
     }
 
     public void SetLetter(char letter)

@@ -46,7 +46,7 @@ public class WordContainer : MonoBehaviour
 
     public string GetWord()
     {
-        string word = " ";
+        string word = "";
 
         for(int i = 0; i < letterContainers.Length; i++)
         {
