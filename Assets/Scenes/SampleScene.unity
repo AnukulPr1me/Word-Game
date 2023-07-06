@@ -3984,6 +3984,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6642205164936958801, guid: 03c8c34d3d847a54fb3a1aa41a1c5cb2, type: 3}
   m_PrefabInstance: {fileID: 1463401650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1362194735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362194736}
+  - component: {fileID: 1362194737}
+  m_Layer: 0
+  m_Name: Word Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362194736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362194735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362194737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362194735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259200ffa98510e4086ffd9ee5e89b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secretWord: 
 --- !u!1001 &1366021659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5996,7 +6041,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d49232fbf423d4db79834c939a274d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordContainers: []
+  wordContainers:
+  - {fileID: 442668395}
+  - {fileID: 1818947081}
+  - {fileID: 452691882}
+  - {fileID: 1163755458}
+  - {fileID: 1948637068}
+  - {fileID: 2104734203}
+  CurrentWordContainerIndex: 0
 --- !u!4 &2012510848
 Transform:
   m_ObjectHideFlags: 0

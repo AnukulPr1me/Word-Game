@@ -7,6 +7,9 @@ public class InputManager : MonoBehaviour
     [Header(" Elements ")]
     [SerializeField] private WordContainer[] wordContainers;
 
+
+    [Header("Settings")]
+    [SerializeField] private int CurrentWordContainerIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,11 @@ public class InputManager : MonoBehaviour
 
     private void keyPressedCallback(char letter)
     {
-        wordContainers[0].Add(letter);
+        if (wordContainers[CurrentWordContainerIndex].IsComplete())
+        {
+            CurrentWordContainerIndex++;
+        }
+
+        wordContainers[CurrentWordContainerIndex].Add(letter);
     }
 }

@@ -16,7 +16,7 @@ public class WordContainer : MonoBehaviour
     private void Awake()
     {
         letterContainers = GetComponentsInChildren<LetterContainer>();
-        Initialize();
+        //Initialize();
     }
 
     void Start()
@@ -40,6 +40,12 @@ public class WordContainer : MonoBehaviour
 
     public void Add(char letter)
     {
-        letterContainers[0].SetLetter(letter);
+        letterContainers[CurrentLetterIndex].SetLetter(letter);
+        CurrentLetterIndex++;
+    }
+
+    public bool IsComplete()
+    {
+        return CurrentLetterIndex >= 5;
     }
 }
