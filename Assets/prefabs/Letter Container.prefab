@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5482615465272066915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.03, y: 1.03, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6642205164936958801}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -5177388603050735206, guid: 7271db5e3ed39354da364e49779aaa19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letter: {fileID: 3567696703007391130}
+  letterContainer: {fileID: 8684119084233882749}
 --- !u!1 &8934275500982974764
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +190,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 710353090117293468, guid: 05b5ac12bf43acb48a470c6d8d1ca77f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -233,8 +234,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 05b5ac12bf43acb48a470c6d8d1ca77f, type: 2}
+  m_sharedMaterial: {fileID: 710353090117293468, guid: 05b5ac12bf43acb48a470c6d8d1ca77f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -258,7 +259,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.05
+  m_fontSize: 7.5
   m_fontSizeBase: 2.65
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -1,0 +1,313 @@
+Using pre-set license
+Built from '2022.2/staging' branch; Version is '2022.2.16f1 (d535843d11e1) revision 13972868'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 15775 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.2.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/anuku/Documents/GitHub/Word-Game
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+54179
+Successfully changed project path to: C:/Users/anuku/Documents/GitHub/Word-Game
+C:/Users/anuku/Documents/GitHub/Word-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12884] Host "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 2105761573 [EditorId] 2105761573 [Version] 1048832 [Id] WindowsEditor(7,Anukul) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12884] Host "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 2105761573 [EditorId] 2105761573 [Version] 1048832 [Id] WindowsEditor(7,Anukul) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 125.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.2.16f1 (d535843d11e1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/anuku/Documents/GitHub/Word-Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6009 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006446 seconds.
+- Loaded All Assemblies, in  0.941 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 363 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.670 seconds
+Domain Reload Profiling:
+	ReloadAssembly (465ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		LoadAllAssembliesAndSetupDomain (0ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (470ms)
+				TypeCache.Initialize (469ms)
+					TypeCache.ScanAssembly (465ms)
+				ResolveRequiredComponents (1ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (608ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (446ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\anuku\Documents\GitHub\Word-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\anuku\Documents\GitHub\Word-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.980 seconds
+Refreshing native plugins compatible for Editor in 3.85 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.575 seconds
+Domain Reload Profiling:
+	ReloadAssembly (212ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		LoadAllAssembliesAndSetupDomain (1766ms)
+			LoadAssemblies (1528ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+				TypeCache.Initialize (268ms)
+					TypeCache.ScanAssembly (262ms)
+				ResolveRequiredComponents (9ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (427ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (255ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 4.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5613 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 99 unused Assets / (1.0 MB). Loaded Objects now: 6064.
+Memory consumption went from 209.1 MB to 208.2 MB.
+Total: 4.883900 ms (FindLiveObjects: 0.759200 ms CreateObjectMapping: 0.194800 ms MarkObjects: 3.456000 ms  DeleteObjects: 0.471900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 36625.332198 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Visibility_Tool@2x.png
+  artifactKey: Guid(ef9977ed07c438845a52c577f4ffcc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Visibility_Tool@2x.png using Guid(ef9977ed07c438845a52c577f4ffcc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31686d689dc94a6babdb7a8445668db') in 0.116601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Sprite_Mode@4x.png
+  artifactKey: Guid(554a30a45860f494ca38586c54b7e5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Sprite_Mode@4x.png using Guid(554a30a45860f494ca38586c54b7e5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e278679ef3ea98841b8db56e023bcd6c') in 0.024936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Visibility_Hidded.png
+  artifactKey: Guid(a20f7223e2252fc4d813fc92d0f3a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Visibility_Hidded.png using Guid(a20f7223e2252fc4d813fc92d0f3a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166c42d908342171f6d408dee521a3b7') in 0.018921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Weight_Brush@3x.png
+  artifactKey: Guid(3279d541bf75c624cbdd7179eb5559a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Weight_Brush@3x.png using Guid(3279d541bf75c624cbdd7179eb5559a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2aabb4f81480a7761a033de9b51e7b8') in 0.026089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Weight_Brush@4x.png
+  artifactKey: Guid(3dd5e5c693a816e4f96b869f6465955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Weight_Brush@4x.png using Guid(3dd5e5c693a816e4f96b869f6465955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5741d5fba9401bf1a63202ad5eb224') in 0.019109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Visibility_Tool.png
+  artifactKey: Guid(1e7c59239d2a59140b34f39ea6d4d44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Visibility_Tool.png using Guid(1e7c59239d2a59140b34f39ea6d4d44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfccdb22dbda32ee15daab09ce4e2b30') in 0.020529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Split_Edge@3x.png
+  artifactKey: Guid(7764b2bf79a49894e8ea10f3d661a4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Split_Edge@3x.png using Guid(7764b2bf79a49894e8ea10f3d661a4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b5ada84fd899e6609000c3cecade86') in 0.023893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/Handles/ss_rightrange.png
+  artifactKey: Guid(ee5df01235032491c8b180741ea820fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/Handles/ss_rightrange.png using Guid(ee5df01235032491c8b180741ea820fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd919b85d6c4828a0c5b792aeb06ab72d') in 0.024551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/WarningIcon_Small.png
+  artifactKey: Guid(04d9cdfc54a6a485d83a3d78a3139505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/WarningIcon_Small.png using Guid(04d9cdfc54a6a485d83a3d78a3139505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d57d7d370f42b9f8aaa48970f24b98') in 0.014019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.2d.common/Path/Editor/Handles/TangentBroken.png
+  artifactKey: Guid(fe95aee6edcd44a18bb5f5ff8269e300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.common/Path/Editor/Handles/TangentBroken.png using Guid(fe95aee6edcd44a18bb5f5ff8269e300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fe346097263cb95bf942c1d418abcb') in 0.017024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Weight_Slider@4x.png
+  artifactKey: Guid(ac47ed8ccc79cf04dae198b9cc5b3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Weight_Slider@4x.png using Guid(ac47ed8ccc79cf04dae198b9cc5b3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '829f34de0a0ad3c7874be5833e407151') in 0.013322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Split Bones@4x.png
+  artifactKey: Guid(518ded92e5dbf494e8f76a74d752272e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Split Bones@4x.png using Guid(518ded92e5dbf494e8f76a74d752272e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda4659a9d4d1c236b7890d761c54a36') in 0.013925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Weight_Brush@2x.png
+  artifactKey: Guid(17d3bf7425a0748489ce3633e38652db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Weight_Brush@2x.png using Guid(17d3bf7425a0748489ce3633e38652db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58bfd11f2972dda7ad72387f97d5284') in 0.014602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/SpriteShapeEdge.png
+  artifactKey: Guid(0ae2b74b1edd14bb18dd7b65ae916a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/SpriteShapeEdge.png using Guid(0ae2b74b1edd14bb18dd7b65ae916a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1bf28d4cba21e4cd0cb21372c64fef') in 0.017510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Sprite_Influence@2x.png
+  artifactKey: Guid(80f77a76467b24d1a856328afa989eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Sprite_Influence@2x.png using Guid(80f77a76467b24d1a856328afa989eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4fbaec21b4a1f2270d0c19083264b9') in 0.013960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Visibility_Tool@3x.png
+  artifactKey: Guid(8004118ba4145a74e823fedaa37acf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Visibility_Tool@3x.png using Guid(8004118ba4145a74e823fedaa37acf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f1f35804afde454715bddb5378be18') in 0.014598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Weight_Slider@2x.png
+  artifactKey: Guid(7f64a6e091143c0458506b559165cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Weight_Slider@2x.png using Guid(7f64a6e091143c0458506b559165cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6d6c48397035241d88f052faafb8f0') in 0.013387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
