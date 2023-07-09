@@ -44,6 +44,16 @@ public class WordContainer : MonoBehaviour
         CurrentLetterIndex++;
     }
 
+    public bool RemoveLetter()
+    {
+        if(CurrentLetterIndex <= 0)
+        {
+            return false;
+        }
+        CurrentLetterIndex--;
+        letterContainers[CurrentLetterIndex].Initialize();
+        return true;
+    }
     public string GetWord()
     {
         string word = "";

@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InputManager : MonoBehaviour
 {
     [Header(" Elements ")]
-     [SerializeField] private WordContainer[] wordContainers;
+    [SerializeField] private WordContainer[] wordContainers;
 
+    [SerializeField] private Button tryButton;
 
     [Header("Settings")]
     [SerializeField] private int CurrentWordContainerIndex;
+
+    private bool canAddLeter = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +39,17 @@ public class InputManager : MonoBehaviour
 
     private void keyPressedCallback(char letter)
     {
+        if (!canAddLeter)
+        {
+            return;
+        }
         wordContainers[CurrentWordContainerIndex].Add(letter);
 
         if (wordContainers[CurrentWordContainerIndex].IsComplete())
         {
+          
+            canAddLeter = false;
+            EnableTryButton();
            // CheckWord();
             //CurrentWordContainerIndex++;
         }
@@ -57,9 +68,31 @@ public class InputManager : MonoBehaviour
         {
             Debug.Log("Wrong word");
             CurrentWordContainerIndex++;
-            Debug.Log(wordToCheck.ToString());
-            Debug.Log(secretWord.ToString());
+            DisableTryButton();
+            canAddLeter = true;
+            
 
         }
     }
-}
+
+    public void BackSpacePressCallback()
+    {
+        bool RemoveLetter = wordContainers[CurrentWordContainerIndex].RemoveLetter();
+        if(RemoveLetter)
+        {
+            DisableTryButton() ;
+        }
+
+        canAddLeter = true;
+    }
+
+
+    private void EnableTryButton()
+    {
+        tryButton.interactable = true;
+    }
+    private void DisableTryButton()
+    {
+        tryButton.interactable = false;
+    }
+}   
