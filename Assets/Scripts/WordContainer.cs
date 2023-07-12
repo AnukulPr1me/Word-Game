@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WordContainer : MonoBehaviour
 {
-
+    
     [Header(" Elements ")]
     private LetterContainer[] letterContainers;
     // Start is called before the first frame update

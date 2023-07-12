@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class keyboardColorizer : MonoBehaviour
 {
+
+    public static keyboardColorizer Instance;
     [Header(" Elements ")]
     private keyboardKey[] keys;
 
