@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     public void SetGameState(GameState gameState)
     {
         this.gameState = gameState;
-        onGameStateChanged?.Invoke(gameState);
+        onGameStateChanged?.Invoke(gameState);   
     }
     // Start is called before the first frame update
     void Start()

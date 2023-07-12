@@ -390,6 +390,7 @@
 "Assets/Scripts/keyboardColorizer.cs"
 "Assets/Scripts/keyboardKey.cs"
 "Assets/Scripts/LetterContainer.cs"
+"Assets/Scripts/UI_Manager.cs"
 "Assets/Scripts/WordContainer.cs"
 "Assets/Scripts/WordManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
