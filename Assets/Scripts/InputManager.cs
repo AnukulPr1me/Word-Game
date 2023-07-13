@@ -20,6 +20,7 @@ public class InputManager : MonoBehaviour
     {
         Initialize();
         keyboardKey.onKeyPressed += keyPressedCallback;
+       // DisableTryButton();
     }
 
 

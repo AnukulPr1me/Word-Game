@@ -242,6 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69859009}
+  - component: {fileID: 69859010}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -264,6 +265,18 @@ Transform:
   m_Father: {fileID: 1423070018}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &69859010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69859008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110a07727c7d3604d85b30ef35f2d6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &119045979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4134,7 +4147,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 962201357}
   m_OnClick:
     m_PersistentCalls:
@@ -5105,6 +5118,7 @@ GameObject:
   - component: {fileID: 1142572663}
   - component: {fileID: 1142572662}
   - component: {fileID: 1142572664}
+  - component: {fileID: 1142572665}
   m_Layer: 5
   m_Name: Keyboard Container
   m_TagString: Untagged
@@ -5199,6 +5213,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1142572665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142572660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10edb674dbab1343ae927b9d74ca595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1175741942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6642205164936958801, guid: 03c8c34d3d847a54fb3a1aa41a1c5cb2, type: 3}
@@ -5351,9 +5377,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199327763}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1199327766
 MonoBehaviour:
@@ -9217,7 +9243,7 @@ MonoBehaviour:
   - {fileID: 495375598}
   - {fileID: 953623399}
   tryButton: {fileID: 962201356}
-  keyboardColorizer: {fileID: 0}
+  keyboardColorizer: {fileID: 1142572665}
   CurrentWordContainerIndex: 0
 --- !u!4 &2012510848
 Transform:
