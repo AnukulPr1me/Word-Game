@@ -5,7 +5,7 @@ using UnityEngine;
 public class DataManager : MonoBehaviour
 {
 
-    public static DataManager Instance;
+    public static DataManager instance;
 
 
     [Header(" Data ")]
@@ -16,9 +16,9 @@ public class DataManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
         }
         else
         {
@@ -61,6 +61,12 @@ public class DataManager : MonoBehaviour
         {
             bestscore = score;
         }
+        SaveData();
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
         SaveData();
     }
 

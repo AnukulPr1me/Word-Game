@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UI_Manager : MonoBehaviour
@@ -9,6 +10,24 @@ public class UI_Manager : MonoBehaviour
     [Header(" Elements ")]
     [SerializeField] private CanvasGroup gameCG;
     [SerializeField] private CanvasGroup levelCompleteCG;
+    [SerializeField] private CanvasGroup gameoverCG;
+
+
+    [Header("level Complete Elements")]
+    [SerializeField] private TextMeshProUGUI levelCompleteCoins;
+    [SerializeField] private TextMeshProUGUI levelCompleteSecretword;
+    [SerializeField] private TextMeshProUGUI levelCompleteScore;
+    [SerializeField] private TextMeshProUGUI levelCompleteBestScore;
+
+    [Header(" Gameover Elements")]
+    [SerializeField] private TextMeshProUGUI gameoverCoins;
+    [SerializeField] private TextMeshProUGUI gameoverSecretword;
+    [SerializeField] private TextMeshProUGUI gameoverBestScore;
+
+
+    [Header(" Game Elements")]
+    [SerializeField] private TextMeshProUGUI gameScore;
+    [SerializeField] private TextMeshProUGUI gameCoins;
     private void Awake()
     {
         if(instance == null)
@@ -24,6 +43,8 @@ public class UI_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ShowGame();
+        HideLevelComplete();
         GameManager.onGameStateChanged += GameStateChangedCallback;
     }
 
@@ -37,10 +58,21 @@ public class UI_Manager : MonoBehaviour
     {
         switch (gameState)
         {
+            case GameState.Game:
+                ShowGame();
+                HideLevelComplete();
+                HideGameover();
+                break;
+
             case GameState.LevelComplete:
                 ShowLevelComplete();
                 HideGame();
                 break;
+
+            case GameState.GameOver:
+                ShowGameover();
+                HideGame();
+                 break;
         }
     }
     // Update is called once per frame
@@ -51,6 +83,9 @@ public class UI_Manager : MonoBehaviour
 
     private void ShowGame()
     {
+        gameCoins.text = DataManager.instance.GetCoins().ToString();
+        gameScore.text = DataManager.instance.GetScore().ToString();
+
         ShowCG(gameCG);
     }
 
@@ -61,12 +96,30 @@ public class UI_Manager : MonoBehaviour
 
     private void ShowLevelComplete()
     {
+        levelCompleteCoins.text = DataManager.instance.GetCoins().ToString();
+        levelCompleteSecretword.text = WordManager.instance.getSecretWord();
+        levelCompleteScore.text = DataManager.instance.GetScore().ToString();
+        levelCompleteBestScore.text = DataManager.instance.GetBestScore().ToString();
         ShowCG(levelCompleteCG);
     }
 
     private void HideLevelComplete()
     {
-        ShowCG(levelCompleteCG);
+        HideCG(levelCompleteCG);
+    }
+
+    private void ShowGameover()
+    {
+        gameoverCoins.text = DataManager.instance.GetCoins().ToString();
+        gameoverSecretword.text = WordManager.instance.getSecretWord();
+        gameoverBestScore.text = DataManager.instance.GetBestScore().ToString();
+
+        ShowCG(gameoverCG);
+    }
+
+    private void HideGameover()
+    {
+        HideCG(gameoverCG);
     }
 
     private void ShowCG(CanvasGroup cg)

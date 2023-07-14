@@ -20,13 +20,28 @@ public class InputManager : MonoBehaviour
     {
         Initialize();
         keyboardKey.onKeyPressed += keyPressedCallback;
-       // DisableTryButton();
+        GameManager.onGameStateChanged += GameStateChangedCallback;
+        // DisableTryButton();
     }
 
 
     private void OnDestroy()
     {
         keyboardKey.onKeyPressed -= keyPressedCallback;
+    }
+
+    private void GameStateChangedCallback(GameState gameState)
+    {
+        switch (gameState)
+        {
+            case GameState.Game:
+               Initialize();
+                break;
+
+            case GameState.LevelComplete:
+             
+                break;
+        }
     }
     // Update is called once per frame
     void Update()
@@ -36,6 +51,9 @@ public class InputManager : MonoBehaviour
 
     private void Initialize()
     {
+        CurrentWordContainerIndex = 0;
+        canAddLeter = true;
+        DisableTryButton();
         for(int i = 0; i < wordContainers.Length; i++)
         {
             wordContainers[i].Initialize();
@@ -81,7 +99,18 @@ public class InputManager : MonoBehaviour
             Debug.Log("Wrong word");
             CurrentWordContainerIndex++;
             DisableTryButton();
-            canAddLeter = true;
+
+            if (CurrentWordContainerIndex >= wordContainers.Length)
+            {
+                Debug.Log("Game Over");
+                DataManager.instance.ResetScore();
+                GameManager.instance.SetGameState(GameState.GameOver);
+            }
+            else
+            {
+                
+                canAddLeter = true;
+            }
             
 
         }
@@ -89,6 +118,8 @@ public class InputManager : MonoBehaviour
 
     public void BackSpacePressCallback()
     {
+        if (!GameManager.instance.IsGameState())
+        { return; }
         bool RemoveLetter = wordContainers[CurrentWordContainerIndex].RemoveLetter();
         if(RemoveLetter)
         {
@@ -110,7 +141,15 @@ public class InputManager : MonoBehaviour
 
     private void SetLevelComplete()
     {
+        UpdateData();
         GameManager.instance.SetGameState(GameState.LevelComplete);
 
+    }
+
+    private void UpdateData()
+    {
+        int scoreToAdd = 6 - CurrentWordContainerIndex;
+        DataManager.instance.IncreaseScore(scoreToAdd);
+        DataManager.instance.AddCoins(scoreToAdd * 3);
     }
 }   
