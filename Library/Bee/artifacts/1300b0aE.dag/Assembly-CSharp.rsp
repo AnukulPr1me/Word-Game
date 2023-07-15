@@ -387,6 +387,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.2.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/DataManager.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/HintManager.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/keyboardColorizer.cs"
 "Assets/Scripts/keyboardKey.cs"
