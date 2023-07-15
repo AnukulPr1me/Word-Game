@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class InputManager : MonoBehaviour
 {
+    public static InputManager instance;
+
     [Header(" Elements ")]
     [SerializeField] private WordContainer[] wordContainers;
 
@@ -15,6 +17,20 @@ public class InputManager : MonoBehaviour
     [SerializeField] private int CurrentWordContainerIndex;
 
     private bool canAddLeter = true;
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -151,5 +167,10 @@ public class InputManager : MonoBehaviour
         int scoreToAdd = 6 - CurrentWordContainerIndex;
         DataManager.instance.IncreaseScore(scoreToAdd);
         DataManager.instance.AddCoins(scoreToAdd * 3);
+    }
+
+    public WordContainer GetCurrentWordContainer()
+    {
+        return wordContainers[CurrentWordContainerIndex];
     }
 }   

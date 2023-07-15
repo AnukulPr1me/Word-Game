@@ -9,6 +9,8 @@ public class WordManager : MonoBehaviour
 
     [Header(" Elements ")]
     [SerializeField] private string secretWord;
+    [SerializeField] private TextAsset wordsText;
+    private string words;
 
     private void Awake()
     {
@@ -20,11 +22,12 @@ public class WordManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        words = wordsText.text;
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetNewSecretWord();
     }
 
     // Update is called once per frame
@@ -36,5 +39,17 @@ public class WordManager : MonoBehaviour
     public string getSecretWord()
     {
         return secretWord;
+    }
+
+    private void SetNewSecretWord()
+    {
+        Debug.Log("String Length : " + words.Length);
+        int wordCount = (words.Length + 2) / 7;
+
+        int wordIndex = Random.Range(0, wordCount);
+
+        int wordStartIndex = wordIndex * 7;
+
+        secretWord = words.Substring(wordStartIndex, 5).ToUpper();
     }
 }

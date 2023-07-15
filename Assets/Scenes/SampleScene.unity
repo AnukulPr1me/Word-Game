@@ -7535,6 +7535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secretWord: UDAMY
+  wordsText: {fileID: 4900000, guid: 091dde6a62ad5e5479712ae6563c0294, type: 3}
 --- !u!1 &1394465166
 GameObject:
   m_ObjectHideFlags: 0

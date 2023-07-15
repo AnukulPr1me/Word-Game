@@ -102,4 +102,9 @@ public class WordContainer : MonoBehaviour
         return CurrentLetterIndex >= 5;
     }
 
+    public void AddAsHint(int letterIndex, char letter)
+    {
+        letterContainers[letterIndex].SetLetter(letter, true);
+    }
+
 }
