@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DataManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class DataManager : MonoBehaviour
     private int score;
     private int bestscore;
 
+
+    [Header(" Events ")]
+    public static Action onCoinsUpdate;
 
     private void Awake()
     {
@@ -44,6 +48,7 @@ public class DataManager : MonoBehaviour
     {
         coins += Amount;
         SaveData();
+        onCoinsUpdate?.Invoke();
     }
 
     public void RemoveCoins(int Amount)
@@ -51,6 +56,8 @@ public class DataManager : MonoBehaviour
         coins -= Amount;
         coins = Mathf.Max(coins, 0);
         SaveData();
+
+        onCoinsUpdate?.Invoke();
     }
 
     public void IncreaseScore(int Amount)

@@ -53,12 +53,15 @@ public class UI_Manager : MonoBehaviour
         HideLevelComplete();
         HideGameover();
         GameManager.onGameStateChanged += GameStateChangedCallback;
+
+        DataManager.onCoinsUpdate += UpdateCoinTexts;
     }
 
 
     private void OnDestroy()
     {
         GameManager.onGameStateChanged -= GameStateChangedCallback;
+        DataManager.onCoinsUpdate -= UpdateCoinTexts;
     }
 
     private void GameStateChangedCallback(GameState gameState)
@@ -94,6 +97,14 @@ public class UI_Manager : MonoBehaviour
     void Update()
     {
      
+    }
+
+    public void UpdateCoinTexts()
+    {
+        menuCoins.text = DataManager.instance.GetCoins().ToString();
+        gameCoins.text = menuCoins.text;
+        levelCompleteCoins.text = menuCoins.text;
+        gameoverCoins.text = menuCoins.text;
     }
 
     private void showMenu()

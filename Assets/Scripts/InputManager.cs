@@ -15,6 +15,7 @@ public class InputManager : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private int CurrentWordContainerIndex;
+    private bool shouldReset;
 
     private bool canAddLeter = true;
 
@@ -51,11 +52,20 @@ public class InputManager : MonoBehaviour
         switch (gameState)
         {
             case GameState.Game:
-               Initialize();
+
+                if(shouldReset)
+                {
+                    Initialize();
+                }
+                    
                 break;
 
             case GameState.LevelComplete:
-             
+                shouldReset = true;
+                break;
+
+            case GameState.GameOver:
+                shouldReset = true;
                 break;
         }
     }
@@ -75,7 +85,7 @@ public class InputManager : MonoBehaviour
             wordContainers[i].Initialize();
 
         }
-
+        shouldReset = false;
     }
 
     private void keyPressedCallback(char letter)
