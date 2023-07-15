@@ -8,10 +8,15 @@ public class UI_Manager : MonoBehaviour
     public static UI_Manager instance;
 
     [Header(" Elements ")]
+    [SerializeField] private CanvasGroup menuCG;
     [SerializeField] private CanvasGroup gameCG;
     [SerializeField] private CanvasGroup levelCompleteCG;
     [SerializeField] private CanvasGroup gameoverCG;
+    
 
+    [Header(" Menu Elements")]
+    [SerializeField] private TextMeshProUGUI menuCoins;
+    [SerializeField] private TextMeshProUGUI menuBestScore;
 
     [Header("level Complete Elements")]
     [SerializeField] private TextMeshProUGUI levelCompleteCoins;
@@ -43,8 +48,10 @@ public class UI_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ShowGame();
+        showMenu();
+        HideGame();
         HideLevelComplete();
+        HideGameover();
         GameManager.onGameStateChanged += GameStateChangedCallback;
     }
 
@@ -58,8 +65,16 @@ public class UI_Manager : MonoBehaviour
     {
         switch (gameState)
         {
+            case GameState.Menu:
+
+                showMenu();
+                HideGame();
+
+                break;
+
             case GameState.Game:
                 ShowGame();
+                hideMenu();
                 HideLevelComplete();
                 HideGameover();
                 break;
@@ -78,9 +93,21 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 
+    private void showMenu()
+    {
+        menuCoins.text = DataManager.instance.GetCoins().ToString();
+        menuBestScore.text = DataManager.instance.GetBestScore().ToString();
+
+        ShowCG(menuCG);
+    }
+
+    private void hideMenu()
+    {
+        HideCG(menuCG);
+    }
     private void ShowGame()
     {
         gameCoins.text = DataManager.instance.GetCoins().ToString();
