@@ -12,6 +12,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private CanvasGroup gameCG;
     [SerializeField] private CanvasGroup levelCompleteCG;
     [SerializeField] private CanvasGroup gameoverCG;
+    [SerializeField] private CanvasGroup settingCG;
     
 
     [Header(" Menu Elements")]
@@ -97,6 +98,17 @@ public class UI_Manager : MonoBehaviour
     void Update()
     {
      
+    }
+
+
+    public void ShowSettings()
+    {
+        ShowCG(settingCG);
+    }
+
+    public void HideSettings()
+    {
+        HideCG(settingCG);
     }
 
     public void UpdateCoinTexts()
