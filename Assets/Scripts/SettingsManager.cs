@@ -46,13 +46,13 @@ public class SettingsManager : MonoBehaviour
 
     private void EnableSounds()
     {
-        //SoundManager.instance.EnableSounds();
+        SoundManager.instance.EnableSounds();
         soundImage.color = Color.white;
     }
 
     private void DisableSounds()
     {
-        //SoundManager.instance.DisableSounds();
+        SoundManager.instance.DisableSounds();
         soundImage.color = Color.gray;
     }
 

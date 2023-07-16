@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
@@ -32,6 +32,9 @@ public class InputManager : MonoBehaviour
         }
     }
 
+
+    public static Action OnLetterAdded;
+    public static Action OnLetterRemoved;
     // Start is called before the first frame update
     void Start()
     {
@@ -104,6 +107,8 @@ public class InputManager : MonoBehaviour
            // CheckWord();
             //CurrentWordContainerIndex++;
         }
+
+        OnLetterAdded?.Invoke();
     }
 
     public void CheckWord()
@@ -153,6 +158,8 @@ public class InputManager : MonoBehaviour
         }
 
         canAddLeter = true;
+
+        OnLetterRemoved?.Invoke();
     }
 
 

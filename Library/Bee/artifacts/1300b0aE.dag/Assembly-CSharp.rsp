@@ -394,6 +394,7 @@
 "Assets/Scripts/keyboardKey.cs"
 "Assets/Scripts/LetterContainer.cs"
 "Assets/Scripts/SettingsManager.cs"
+"Assets/Scripts/SoundManager.cs"
 "Assets/Scripts/UI_Manager.cs"
 "Assets/Scripts/WordContainer.cs"
 "Assets/Scripts/WordManager.cs"
