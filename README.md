@@ -6,6 +6,13 @@ Welcome to the Word Guess Game repository! This is a simple and entertaining gam
 
 The objective of the game is to correctly guess the hidden word within a limited number of attempts. The player starts with a certain number of lives, and for each incorrect guess, a life is deducted. The player wins the game by guessing all the letters of the hidden word correctly before running out of lives.
 
+## Screenshot
+
+![image](https://github.com/AnukulPr1me/Word-Game/assets/101039186/d99ac725-85c5-4fd2-9438-b8d2e83fb5b8)
+![image](https://github.com/AnukulPr1me/Word-Game/assets/101039186/4bf7f043-e48a-4d1f-b590-d58887bb5967)
+
+
+
 ## Features
 
 - User-friendly interface with intuitive controls.
